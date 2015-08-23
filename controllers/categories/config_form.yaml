@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Category
+
+# Model Form Field configuration
+form: $/rebel59/isogallery/models/category/fields.yaml
+
+# Model Class name
+modelClass: Rebel59\Isogallery\Models\Category
+
+# Default redirect location
+defaultRedirect: rebel59/isogallery/categories
+
+# Create page
+create:
+    title: Create Category
+    redirect: rebel59/isogallery/categories/update/:id
+    redirectClose: rebel59/isogallery/categories
+
+# Update page
+update:
+    title: Edit Category
+    redirect: rebel59/isogallery/categories
+    redirectClose: rebel59/isogallery/categories
+
+# Preview page
+preview:
+    title: Preview Category

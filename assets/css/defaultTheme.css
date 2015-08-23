@@ -1,0 +1,66 @@
+#r59-isogallery .photo-navigation ul {
+  padding: 0;
+}
+#r59-isogallery .photo-navigation ul .btn-success {
+  background-color: #fff;
+  border-color: #8bd542;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease;
+          transition: background-color 0.5s ease, color 0.5s ease;
+  color: #333;
+}
+#r59-isogallery .photo-navigation ul .btn-success.active {
+  background-color: #8bd542;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease;
+          transition: background-color 0.5s ease, color 0.5s ease;
+  color: white;
+}
+#r59-isogallery .photos-container {
+  padding: 0;
+}
+#r59-isogallery .photos-container .photo {
+  position: relative;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
+#r59-isogallery .photos-container .photo .overlay {
+  padding-top: 75px;
+  opacity: 0;
+  background-color: rgba(139, 213, 66, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+}
+#r59-isogallery .photos-container .photo .overlay a {
+  color: white;
+  background-color: white;
+  display: inline-block;
+  margin: 10px 15px;
+  border-radius: 2em;
+  padding: 0.25em;
+  height: 1.5em;
+  width: 1.5em;
+  font-size: 1.5em;
+}
+#r59-isogallery .photos-container .photo .overlay a i {
+  color: #8bd542;
+}
+#r59-isogallery .photos-container .photo .overlay p {
+  font-size: 1em;
+  color: white;
+  font-weight: 400;
+}
+#r59-isogallery .photos-container .photo .overlay span {
+  font-size: 0.8em;
+  color: white;
+}
+#r59-isogallery .photos-container .photo:hover {
+  cursor: pointer;
+}
+#r59-isogallery .photos-container .photo:hover .overlay {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+}

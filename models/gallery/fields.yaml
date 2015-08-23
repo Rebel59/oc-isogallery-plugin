@@ -1,0 +1,19 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: rebel59.isogallery::lang.models.gallery.title
+        span: left
+    category:
+        label: rebel59.isogallery::lang.models.gallery.category
+        type: relation
+        nameFrom: title
+        span: right
+    url:
+        label: rebel59.isogallery::lang.models.gallery.url
+    photos:
+        label: rebel59.isogallery::lang.models.gallery.photos
+        type: fileupload
+        mode: image

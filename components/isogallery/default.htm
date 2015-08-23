@@ -1,0 +1,32 @@
+<div id="r59-isogallery" class="photo-component">
+    <div class="photo-navigation text-center">
+        <ul>
+            <li class="btn btn-success iso-nav-btn active" data-category="*">Alles</li>
+            {% for category in categories %}
+            <li class="btn btn-success iso-nav-btn" data-category=".{{category.slug}}">{{category.title}}</li>
+            {%endfor%}
+        </ul>
+    </div>
+    <div class="photos-container container-fluid">
+
+        {% for gallery in galleries %}
+        <!--<div class="photo-wrapper col-md-3">-->
+            <div class="photo col-md-3 col-sm-4 col-xs-6 {{gallery.category.slug}}" style="background-image: url({{gallery.photos.0.path}}); background-size: cover;">
+                <div class="overlay text-center">
+                    <a href="{{gallery.photos.0.path}}" class="strip" data-strip-group="photos-{{loop.index}}"><i class="fa fa-search"></i></a>
+                    <a href=""><i class="fa fa-link"></i></a>
+                    <p>{{ gallery.title }}</p>
+                    <span>{{ gallery.category.title }}</span>
+                    <div class="hidden">
+                        {% for photo in gallery.photos %}
+                            {%if loop.index != 1%}
+                            <a href="{{photo.path}}" class="strip" data-strip-group="photos-{{loop.parent.loop.index}}" data-strip-caption="{{photo.description}}"></a>
+                            {%endif%}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        <!--</div>-->
+        {% endfor %}
+    </div>
+</div>

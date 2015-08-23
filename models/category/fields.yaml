@@ -1,0 +1,14 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: rebel59.isogallery::lang.models.category.title
+        span: left
+    slug:
+        label: rebel59.isogallery::lang.models.category.slug
+        span: right
+        preset:
+            field: title
+            type: slug

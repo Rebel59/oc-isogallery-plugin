@@ -1,0 +1,12 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: rebel59.isogallery::lang.models.gallery.title
+        searchable: true
+    created_at:
+        label: rebel59.isogallery::lang.models.created_at
+    updated_at:
+        label: rebel59.isogallery::lang.models.updated_at

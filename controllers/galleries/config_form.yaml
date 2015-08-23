@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Gallery
+
+# Model Form Field configuration
+form: $/rebel59/isogallery/models/gallery/fields.yaml
+
+# Model Class name
+modelClass: Rebel59\Isogallery\Models\Gallery
+
+# Default redirect location
+defaultRedirect: rebel59/isogallery/galleries
+
+# Create page
+create:
+    title: Create Gallery
+    redirect: rebel59/isogallery/galleries/update/:id
+    redirectClose: rebel59/isogallery/galleries
+
+# Update page
+update:
+    title: Edit Gallery
+    redirect: rebel59/isogallery/galleries
+    redirectClose: rebel59/isogallery/galleries
+
+# Preview page
+preview:
+    title: Preview Gallery
