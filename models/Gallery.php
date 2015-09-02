@@ -21,13 +21,13 @@ class Gallery extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = ['category_id', 'title', 'url'];
+    protected $fillable = ['title', 'url'];
 
     /**
      * @var array Relations
      */
-    public $belongsTo = [
-        'category' => ['Rebel59\IsoGallery\Models\Category'],
+    public $belongsToMany = [
+        'categories' => ['Rebel59\Isogallery\Models\Category','table' => 'rebel59_isogallery_gally_cats', 'order' => 'title'],
     ];
     public $attachMany = [
         'photos' => ['System\Models\File', 'order' => 'sort_order'],

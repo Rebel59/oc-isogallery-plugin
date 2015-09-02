@@ -14,15 +14,15 @@ class CreateGalleriesTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('url');
-            $table->integer('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('rebel59_isogallery_categories');
             $table->timestamps();
         });
+
     }
 
     public function down()
     {
         Schema::dropIfExists('rebel59_isogallery_galleries');
+
     }
 
 }

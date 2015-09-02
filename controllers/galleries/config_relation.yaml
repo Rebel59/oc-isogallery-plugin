@@ -2,11 +2,11 @@
 #  Relation Behavior Config
 # ===================================
 
-category:
-    label: rebel59.isogallery::lang.models.category.title
+categories:
+    label: rebel59.isogallery::lang.models.gallery.category
     view:
-        form: $/rebel59/isogallery/models/category/fields.yaml
-        toolbarButtons: update|delete
+        list: $/rebel59/isogallery/models/category/columns.yaml
+        toolbarButtons: add|remove
     manage:
         form: $/rebel59/isogallery/models/category/fields.yaml
         list: $/rebel59/isogallery/models/category/columns.yaml

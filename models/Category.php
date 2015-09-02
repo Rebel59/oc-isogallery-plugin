@@ -21,10 +21,14 @@ class Category extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = [];
+    protected $fillable = ['title', 'slug'];
 
     /**
      * @var array Relations
      */
+
+    public $belongsToMany = [
+        'galleries' => ['Rebel59\Isogallery\Models\Gallery', 'table' => 'rebel59_isogallery_gally_cats']
+    ];
 
 }
