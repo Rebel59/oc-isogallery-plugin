@@ -1,4 +1,4 @@
-# oc-isogallery-plugin
+# IsoGallery
 Gallery with sorting functions using isotope.js
 
 ## Installation
