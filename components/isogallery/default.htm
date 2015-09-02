@@ -12,7 +12,7 @@
             <div class="photo col-md-3 col-sm-4 col-xs-6 {% for category in gallery.categories %}{{category.slug}} {%endfor%} hover" style="background-image: url({{gallery.photos.0.path}}); background-size: cover;">
                 <div class="overlay text-center">
                     <a href="{{gallery.photos.0.path}}" class="strip" data-strip-group="photos-{{loop.index}}"><i class="fa fa-search"></i></a>
-                    <a href="http://{{gallery.url}}"><i class="fa fa-link"></i></a>
+                    <a href="http://{{gallery.url}}" target="_blank"><i class="fa fa-link"></i></a>
                     <p>{{ gallery.title }}</p>
                     <span>{{ gallery.category.title }}</span>
                     <div class="hidden">
