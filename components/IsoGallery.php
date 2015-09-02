@@ -10,8 +10,8 @@ class IsoGallery extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'isoGallery Component',
-            'description' => 'No description provided yet...'
+            'name'        => 'rebel59.isogallery::lang.components.isoGallery.name',
+            'description' => 'rebel59.isogallery::lang.components.isoGallery.description'
         ];
     }
 
@@ -19,26 +19,26 @@ class IsoGallery extends ComponentBase
     {
         return [
             'defaultLayout' => [
-                'title'         => 'rebel59.isogallery::lang.components.gallery.properties.defaultLayout.title',
-                'description'   => 'rebel59.isogallery::lang.components.gallery.properties.defaultLayout.description',
+                'title'         => 'rebel59.isogallery::lang.components.isoGallery.properties.defaultLayout.title',
+                'description'   => 'rebel59.isogallery::lang.components.isoGallery.properties.defaultLayout.description',
                 'type'          => 'checkbox',
                 'default'       => 'true',
             ],
             'defaultJs' => [
-                'title'         => 'rebel59.isogallery::lang.components.gallery.properties.defaultJs.title',
-                'description'   => 'rebel59.isogallery::lang.components.gallery.properties.defaultJs.description',
+                'title'         => 'rebel59.isogallery::lang.components.isoGallery.properties.defaultJs.title',
+                'description'   => 'rebel59.isogallery::lang.components.isoGallery.properties.defaultJs.description',
                 'type'          => 'checkbox',
                 'default'       => 'true',
             ],
             'stripSource' => [
-                'title'         => 'rebel59.isogallery::lang.components.gallery.properties.stripSource.title',
-                'description'   => 'rebel59.isogallery::lang.components.gallery.properties.stripSource.description',
+                'title'         => 'rebel59.isogallery::lang.components.isoGallery.properties.stripSource.title',
+                'description'   => 'rebel59.isogallery::lang.components.isoGallery.properties.stripSource.description',
                 'type'          => 'checkbox',
                 'default'       => 'true',
             ],
             'isotopeSource' => [
-                'title'         => 'rebel59.isogallery::lang.components.gallery.properties.isotopeSource.title',
-                'description'   => 'rebel59.isogallery::lang.components.gallery.properties.isotopeSource.description',
+                'title'         => 'rebel59.isogallery::lang.components.isoGallery.properties.isotopeSource.title',
+                'description'   => 'rebel59.isogallery::lang.components.isoGallery.properties.isotopeSource.description',
                 'type'          => 'checkbox',
                 'default'       => 'true',
             ],

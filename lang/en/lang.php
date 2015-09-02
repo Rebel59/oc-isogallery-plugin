@@ -35,8 +35,27 @@ return [
     ],
     'components' => [
         'isoGallery' => [
-            'name' => 'IsoGallery',
-            'description' => 'Displays the Gallery'
+            'name' => 'IsoGallery Component',
+            'description' => 'Displays the Isotope filters and Gallery',
+            'properties' => [
+                'defaultLayout' => [
+                    'title' => 'Default CSS',
+                    'description' => 'IsoGallery uses a default layout (greenish) which injects CSS through the controller. If you don\'t want this, you can uncheck this option in the component settings.'
+                ],
+                'defaultJs' => [
+                    'title' => 'Default JS',
+                    'description' => 'IsoGallery filters galleries through a JS function that is injected through the controller. If you want to use your own function, you can uncheck this option in the component settings.'
+                ],
+                'stripSource' => [
+                    'title' => 'Strip.js source',
+                    'description' => 'IsoGallery uses strip.js for the lightbox functionality. If you already have strip implemented on your website, of if you want to use a different Lightbox plugin you can uncheck this option in the component settings.'
+                ],
+                'isotopeSource' => [
+                    'title' => 'Isotope source',
+                    'description' => 'IsoGallery filters and places the galleries with Isotope. If you already have Isotope implemented on your website, you can uncheck this option in the component settings.'
+                ]
+
+            ]
         ],
     ],
     'actions' => [
