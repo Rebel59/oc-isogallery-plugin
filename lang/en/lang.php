@@ -16,15 +16,21 @@ return [
         'created_at' => 'Created at',
         'updated_at' => 'Updated at',
         'gallery' => [
+            'fieldName' => 'Gallery',
             'title' => 'Title',
             'photos' => 'Photos',
             'category' => 'Category',
-            'url' => 'URL',
+            'url' => 'www.mywebsite.com',
+            'categories_section' => 'Categories',
+            'title_section' => 'Title & URL',
+            'photos_section' => 'Photos',
+
         ],
         'category' => [
+            'fieldName' => 'Category',
             'title' => 'Title',
             'slug' => 'Slug',
-
+            'title_section' => 'Title & Slug',
         ],
     ],
     'components' => [
@@ -33,6 +39,17 @@ return [
             'description' => 'Displays the Gallery'
         ],
     ],
+    'actions' => [
+        'manage_galleries' => 'Manage Galleries',
+        'create_gallery' => 'Create Gallery',
+        'edit_gallery' => 'Edit Gallery',
+        'preview_gallery' => 'Preview Gallery',
+    ],
+    'controllers' => [
+        'galleries' => [
+            'modelName' => 'Gallery'
+        ]
+    ]
 
 
 ];

@@ -9,7 +9,7 @@ list: $/rebel59/isogallery/models/gallery/columns.yaml
 modelClass: Rebel59\Isogallery\Models\Gallery
 
 # List Title
-title: Manage Galleries
+title: rebel59.isogallery::lang.actions.manage_galleries
 
 # Link URL for each record
 recordUrl: rebel59/isogallery/galleries/update/:id

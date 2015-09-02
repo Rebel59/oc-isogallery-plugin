@@ -3,16 +3,25 @@
 # ===================================
 
 fields:
+    title_section:
+        type: section
+        label: rebel59.isogallery::lang.models.gallery.title_section
     title:
-        label: rebel59.isogallery::lang.models.gallery.title
+        placeholder: rebel59.isogallery::lang.models.gallery.title
         span: left
+        required: true
     url:
-        label: rebel59.isogallery::lang.models.gallery.url
+        placeholder: rebel59.isogallery::lang.models.gallery.url
         span: right
+    categories_section:
+        type: section
+        label: rebel59.isogallery::lang.models.gallery.categories_section
     categories:
         type: partial
         path: $/rebel59/isogallery/controllers/galleries/_categories_relation.htm
+    photos_section:
+        type: section
+        label: rebel59.isogallery::lang.models.gallery.photos_section
     photos:
-        label: rebel59.isogallery::lang.models.gallery.photos
         type: fileupload
         mode: image

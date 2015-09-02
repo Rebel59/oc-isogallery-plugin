@@ -3,11 +3,14 @@
 # ===================================
 
 fields:
+    title_section:
+        label: rebel59.isogallery::lang.models.category.title_section
+        type: section
     title:
-        label: rebel59.isogallery::lang.models.category.title
         span: left
+        placeholder: rebel59.isogallery::lang.models.category.title
     slug:
-        label: rebel59.isogallery::lang.models.category.slug
+        placeholder: rebel59.isogallery::lang.models.category.slug
         span: right
         preset:
             field: title

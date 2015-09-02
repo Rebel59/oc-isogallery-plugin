@@ -3,7 +3,7 @@
 # ===================================
 
 # Record name
-name: Gallery
+name: rebel59.isogallery::lang.controllers.galleries.modelName
 
 # Model Form Field configuration
 form: $/rebel59/isogallery/models/gallery/fields.yaml
@@ -16,16 +16,16 @@ defaultRedirect: rebel59/isogallery/galleries
 
 # Create page
 create:
-    title: Create Gallery
+    title: rebel59.isogallery::lang.actions.create_gallery
     redirect: rebel59/isogallery/galleries/update/:id
     redirectClose: rebel59/isogallery/galleries
 
 # Update page
 update:
-    title: Edit Gallery
+    title: rebel59.isogallery::lang.actions.edit_gallery
     redirect: rebel59/isogallery/galleries
     redirectClose: rebel59/isogallery/galleries
 
 # Preview page
 preview:
-    title: Preview Gallery
+    title: rebel59.isogallery::lang.actions.preview_gallery
