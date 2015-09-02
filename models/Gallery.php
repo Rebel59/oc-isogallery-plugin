@@ -32,5 +32,16 @@ class Gallery extends Model
     public $attachMany = [
         'photos' => ['System\Models\File', 'order' => 'sort_order'],
     ];
+    use \October\Rain\Database\Traits\Validation;
+
+    public $rules = [
+        'title'                  => 'required',
+        'url'                 => 'required',
+        'categories'        => 'required',
+        'photos'    => 'required'
+    ];
+    public $customMessages = [
+        'required' => 'The :attribute field is required.'
+    ];
 
 }

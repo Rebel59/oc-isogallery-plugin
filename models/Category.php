@@ -31,4 +31,13 @@ class Category extends Model
         'galleries' => ['Rebel59\Isogallery\Models\Gallery', 'table' => 'rebel59_isogallery_gally_cats']
     ];
 
+    use \October\Rain\Database\Traits\Validation;
+
+    public $rules = [
+        'title'                  => 'required',
+        'slug'                 => 'required'
+    ];
+    public $customMessages = [
+        'required' => 'The :attribute field is required.'
+    ];
 }
