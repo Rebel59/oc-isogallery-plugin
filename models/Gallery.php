@@ -37,7 +37,6 @@ class Gallery extends Model
     public $rules = [
         'title'                  => 'required',
         'url'                 => 'required',
-        'categories'        => 'required',
         'photos'    => 'required'
     ];
     public $customMessages = [
