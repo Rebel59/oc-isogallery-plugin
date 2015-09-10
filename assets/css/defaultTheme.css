@@ -19,7 +19,7 @@
 }
 #r59-isogallery .photos-container .photo {
   position: relative;
-  height: 250px;
+  height: 25vw;
   margin: 0;
   padding: 0;
 }
@@ -63,4 +63,9 @@
   opacity: 1;
   -webkit-transition: opacity 0.5s ease;
           transition: opacity 0.5s ease;
+}
+@media (max-width: 767px) {
+  #r59-isogallery .photos-container .photo {
+    height: 50vw;
+  }
 }
