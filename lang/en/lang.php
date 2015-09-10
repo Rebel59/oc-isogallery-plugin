@@ -53,6 +53,11 @@ return [
                 'isotopeSource' => [
                     'title' => 'Isotope source',
                     'description' => 'IsoGallery filters and places the galleries with Isotope. If you already have Isotope implemented on your website, you can uncheck this option in the component settings.'
+                ],
+                'amount' => [
+                    'title' => 'Amount of galleries',
+                    'description' => 'Amount of galleries that should be loaded. 0 for unlimited.',
+                    'validationMessage' => 'The Amount property can contain only numeric symbols'
                 ]
 
             ]
