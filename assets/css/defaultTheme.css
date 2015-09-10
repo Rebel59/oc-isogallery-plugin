@@ -24,7 +24,7 @@
   padding: 0;
 }
 #r59-isogallery .photos-container .photo .overlay {
-  padding-top: 75px;
+  padding-top: 25%;
   opacity: 0;
   background-color: rgba(139, 213, 66, 0.8);
   width: 100%;
