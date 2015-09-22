@@ -1,3 +1,5 @@
+# This is the development branch. The master branch should be up to date with the marketplace. Also, plugin might not behave like it should.
+
 # IsoGallery
 Gallery with sorting functions using isotope.js
 
