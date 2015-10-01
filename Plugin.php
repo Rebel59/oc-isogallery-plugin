@@ -31,6 +31,12 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerPermissions(){
+        return [
+        'rebel59.isogallery.access_galleries' => ['tab' => 'rebel59.isogallery::lang.plugin.name', 'label' => 'rebel59.isogallery::lang.permissions.access_galleries'],
+        ];
+    }
+
     public function registerNavigation()
     {
         return [

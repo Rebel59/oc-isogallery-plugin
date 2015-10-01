@@ -67,12 +67,15 @@ return [
         'manage_galleries' => 'Beheer Gallerijen',
         'create_gallery' => 'Maak Gallerij',
         'edit_gallery' => 'Pas Gallerij aan',
-        'preview_gallery' => 'Toon voorbeeld van Gallery',
+        'preview_gallery' => 'Toon voorbeeld van Gallerij',
     ],
     'controllers' => [
         'galleries' => [
             'modelName' => 'Gallerij'
         ]
+    ],
+    'permissions' => [
+        'access_galleries' => 'Beheer de gallerijen'
     ]
 
 

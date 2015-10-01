@@ -73,6 +73,9 @@ return [
         'galleries' => [
             'modelName' => 'Gallery'
         ]
+    ],
+    'permissions' => [
+        'access_galleries' => 'Manage the galleries'
     ]
 
 
