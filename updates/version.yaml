@@ -4,3 +4,4 @@
 - create_categories_table.php
 1.0.2: Hotfix for October Core bug
 1.1.0: Added Dutch as Back-end Language & Added Permissions
+1.1.1: Fixed permissions bug
