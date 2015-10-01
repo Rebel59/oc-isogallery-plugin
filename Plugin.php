@@ -44,7 +44,7 @@ class Plugin extends PluginBase
                 'label' => 'rebel59.isogallery::lang.menu.name',
                 'url'   => Backend::url('rebel59/isogallery/galleries'),
                 'icon'        => 'icon-camera',
-                'permissions' => ['rebel59.isogallery'],
+                'permissions' => ['rebel59.isogallery.*'],
                 'order'       => 500,
                 'sideMenu' => [
                     'galleries' => [
@@ -52,13 +52,13 @@ class Plugin extends PluginBase
                         'icon'        => 'icon-files-o',
                         'url'         => Backend::url('rebel59/isogallery/galleries'),
                         'attributes'  => ['data-menu-item'=>'pages'],
-                        'permissions' => ['rebel59.isogallery.galleries']
+                        'permissions' => ['rebel59.isogallery.*']
                     ],
                     'categories' => [
                         'label'       => 'rebel59.isogallery::lang.menu.sidemenu.categories',
                         'icon'        => 'icon-sitemap',
                         'url'         => Backend::url('rebel59/isogallery/categories'),
-                        'permissions' => ['rebel59.isogallery.categoriespuu']
+                        'permissions' => ['rebel59.isogallery.*']
                     ]
                 ]
             ],
