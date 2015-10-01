@@ -2,4 +2,5 @@
 - First version of IsoGallery
 - create_galleries_table.php
 - create_categories_table.php
-1.0.2: - Hotfix for October Core bug
+1.0.2: Hotfix for October Core bug
+1.1.0: Added Dutch as Back-end Language

@@ -3,7 +3,7 @@
 return [
     'plugin' => [
         'name' => 'Isotope Gallery',
-        'description' => 'Display and manage isotope galleri'
+        'description' => 'Display and manage isotope gallery'
     ],
     'menu' => [
         'name' => 'Gallery',
