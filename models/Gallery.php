@@ -2,11 +2,15 @@
 
 use Model;
 
+
 /**
  * gallery Model
  */
 class Gallery extends Model
 {
+
+    use \October\Rain\Database\Traits\Sortable;
+    use \October\Rain\Database\Traits\Validation;
 
     /**
      * @var string The database table used by the model.
@@ -32,7 +36,7 @@ class Gallery extends Model
     public $attachMany = [
         'photos' => ['System\Models\File', 'order' => 'sort_order'],
     ];
-    use \October\Rain\Database\Traits\Validation;
+    
 
     public $rules = [
         'title'                  => 'required',

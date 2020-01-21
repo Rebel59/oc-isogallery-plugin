@@ -5,3 +5,6 @@
 1.0.2: Hotfix for October Core bug
 1.1.0: Added Dutch as Back-end Language & Added Permissions
 1.1.1: Fixed permissions bug
+1.2.0: 
+- Add Sorting to Galleries
+- galleries_add_sort_order_column.php
